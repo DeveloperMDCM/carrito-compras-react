@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artesanias de sucre</title>
+    <link rel="manifest" href="2-manifest.json">
+    <link rel="stylesheet" href="https://bootadmin.org/style/vendor/library.min.css">
+    <link rel="stylesheet" href="https://bootadmin.org/style/core/style.min.css">
+
+  </head>
+  <body id="landing">
+    <div class="loading ">
+      <div class="loading-center">
+        <h1>Artesanias de sucre</h1>
+          <img class="mx-auto" src="images/sombrero.png" alt="Loading" />
+          <h1 class="mt-5"></h1>
+          <img class="mx-auto" src="images/loading.gif" alt="Loading" />
+  
+      </div>
+  </div>
+  <div class="page-container animsition"></div>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- <script type="module" src="./moment-with-locales.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Le Javascript -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+
+<script src="https://bootadmin.org/scripts/vendor/bootstrap.min.js"></script>
+<script src="https://bootadmin.org/scripts/vendor/library.min.js"></script>
+<script src="https://bootadmin.org/scripts/core/main.js"></script>
+        <!-- (D) SERVICE WORKER -->
+        <script>
+          if ("serviceWorker" in navigator) { navigator.serviceWorker.register("3-sw.js"); }
+          </script>
+  </body>
+</html>

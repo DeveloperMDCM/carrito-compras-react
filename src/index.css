@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+button.accordion {
+    width: 100%;
+    /* background-color: whitesmoke; */
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: #37474f;
+    cursor: pointer;
+    /* display: flex; */
+    transition: background-color 0.2s linear ease-in-out;
+  }
+  
+  
+  button.accordion:hover:after{
+    content: "\f150";
+    font-family: "fontawesome";
+    font-size: 13px;
+    /* margin: 10px -3px; */
+    float: right;
+  }
+  
+  button.accordion.is-open:after {
+      font-family: "fontawesome";
+    content: "\f151";
+    font-size: 13px;
+    float: right;  
+    display: flex;
+    /* margin: 10px -3px; */
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  button.accordion:hover,
+  button.accordion.is-open {
+    background-color: #ddd;
+  }
+  
+  .accordion-content {
+   
+    /* border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke; */
+    /* padding: 0 20px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  
+
+  /* ::-webkit-scrollbar-thumb {
+    background-color: red;
+  } */
+  
+  #offcanvasBottom {
+    max-height: 190px;
+    /* background-color: #8f9797; */
+  }
